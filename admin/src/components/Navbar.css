@@ -1,0 +1,108 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Navbar Container */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+  background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);
+  color: #ffffff;
+  font-family: 'Arial', sans-serif;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  transition: all 0.3s ease;
+}
+
+/* Logo Styling */
+.navbar-logo {
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: #000000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Navbar Links */
+.navbar-links {
+  display: flex;
+  gap: 25px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.navbar-link {
+  color: #030305;
+  text-decoration: none;
+  font-size: 1rem;
+  padding: 8px 12px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.navbar-link:hover {
+  box-shadow: 0px 4px 12px rgba(123, 123, 123, 0.5);
+}
+
+/* Toggle Button for Mobile */
+.navbar-toggle {
+  display: none;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 30px;
+  height: 24px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.toggle-bar {
+  width: 100%;
+  height: 3px;
+  background-color: #030305;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+  .navbar-links {
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    display: none;
+    flex-direction: column;
+    background-color: #ffffff;
+    width: 180px;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  .navbar-links.open {
+    display: flex;
+  }
+
+  .navbar-toggle {
+    display: flex;
+  }
+}
+
+/* Mobile Link Styling */
+@media (max-width: 768px) {
+  .navbar-link {
+    color: #000000;
+    text-align: center;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+  }
+}

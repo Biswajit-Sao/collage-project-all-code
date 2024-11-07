@@ -1,0 +1,103 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2.5rem;
+  background: linear-gradient(135deg, #e0f7fa, #f0f8ff);
+  border-radius: 15px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  margin: 1.5rem 2rem;
+  height: 70vh;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.header:hover {
+  transform: scale(1.02);
+}
+
+.header-content {
+  max-width: 55%;
+  padding-right: 2rem;
+}
+
+.header-content h1 {
+  font-size: 2.5rem;
+  color: #0288d1;
+  margin-bottom: 1.5rem;
+  font-family: 'Arial', sans-serif;
+  line-height: 1.2;
+}
+
+.header-content p {
+  font-size: 1.1rem;
+  color: #555;
+  margin-bottom: 1.5rem;
+  line-height: 1.6;
+}
+
+.header-button {
+  padding: 0.75rem 2rem;
+  background-color: #0288d1;
+  color: #fff;
+  border: none;
+  border-radius: 25px;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.header-button:hover {
+  background-color: #03a9f4;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.header-image img {
+  width: 480px;
+  height: 380px;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease;
+}
+
+.header-image img:hover {
+  transform: scale(1.05);
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    padding: 2rem 1.5rem;
+    height: auto;
+    text-align: center;
+  }
+
+  .header-content {
+    max-width: 100%;
+    padding-right: 0;
+  }
+
+  .header-image {
+    margin-top: 1.5rem;
+  }
+
+  .header-image img {
+    width: 80%;
+  }
+
+  .header-content h1 {
+    font-size: 2rem;
+  }
+
+  .header-content p {
+    font-size: 1rem;
+  }
+
+  .header-button {
+    padding: 0.7rem 1.5rem;
+    font-size: 0.9rem;
+  }
+}

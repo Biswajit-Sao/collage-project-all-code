@@ -1,0 +1,131 @@
+/* Banner.css */
+.banner {
+    display: flex;
+    align-items: center;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+    gap: 2rem;
+    max-width: 900px;
+    margin: 2rem auto;
+  }
+  
+  .banner-image img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  
+  .banner-info {
+    flex: 1;
+    color: #333;
+  }
+  
+  .banner-info h2 {
+    font-size: 1.8rem;
+    color: #00796b;
+    margin-bottom: 0.5rem;
+  }
+  
+  .banner-info .degree {
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #555;
+  }
+  
+  .banner-info .about {
+    margin: 1rem 0;
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+  
+  .banner-info .fee {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #e57373;
+  }
+
+  /* BookingSlot.css */
+.booking-slot {
+    padding: 2rem;
+    background-color: #f4f4f4;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 600px;
+    margin: 2rem auto;
+  }
+  
+  .booking-slot h2 {
+    font-size: 1.8rem;
+    color: #00796b;
+    margin-bottom: 1rem;
+  }
+  
+  .date-container {
+    display: flex;
+    justify-content: space-around;
+    margin: 1rem 0;
+  }
+  
+  .date-item {
+    cursor: pointer;
+    padding: 1rem;
+    text-align: center;
+    border-radius: 8px;
+    background-color: #e0f7fa;
+    color: #00796b;
+    transition: background-color 0.3s ease;
+  }
+  
+  .date-item p {
+    margin: 0;
+    font-size: 1rem;
+  }
+  
+  .date-item.selected {
+    background-color: #00796b;
+    color: #ffffff;
+  }
+  
+  .time-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 1rem 0;
+  }
+  
+  .time-item {
+    cursor: pointer;
+    padding: 0.5rem 1rem;
+    margin: 0.3rem;
+    border-radius: 5px;
+    background-color: #e0f7fa;
+    color: #00796b;
+    transition: background-color 0.3s ease;
+  }
+  
+  .time-item.selected {
+    background-color: #00796b;
+    color: #ffffff;
+  }
+  
+  .book-button {
+    padding: 0.8rem 2rem;
+    margin-top: 1rem;
+    background-color: #00796b;
+    color: #ffffff;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .book-button:hover {
+    background-color: #004d40;
+  }
+  
+  

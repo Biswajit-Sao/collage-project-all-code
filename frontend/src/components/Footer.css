@@ -1,0 +1,83 @@
+/* Footer styling */
+.footer {
+  display: flex;
+  flex-wrap: wrap; /* Allow sections to wrap on smaller screens */
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 2rem;
+  background-color: #00796b;
+  color: #ffffff;
+  font-family: Arial, sans-serif;
+  border-top: 2px solid #004d40;
+  margin-top: 2rem;
+}
+
+.footer-section {
+  flex: 1;
+  margin: 0 1rem;
+  min-width: 250px; /* Ensure sections have a minimum width */
+}
+
+.footer-logo h2 {
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.footer-logo p {
+  max-width: 200px;
+  line-height: 1.5;
+  font-size: 0.9rem;
+}
+
+.footer-links h3,
+.footer-contact h3 {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.footer-links ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links ul li {
+  margin: 0.5rem 0;
+}
+
+.footer-links ul li a {
+  color: #90e0ef;
+  text-decoration: none;
+  font-size: 0.9rem;
+  transition: color 0.3s ease;
+}
+
+.footer-links ul li a:hover {
+  color: #ffffff;
+}
+
+.footer-contact p {
+  margin: 0.5rem 0;
+  font-size: 0.9rem;
+}
+
+/* Copyright section */
+.footer-copyright {
+  text-align: center;
+  width: 100%; /* Full width for copyright */
+  padding: 1rem 0;
+  border-top: 1px solid #004d40;
+  font-size: 0.8rem;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .footer {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .footer-section {
+    margin-bottom: 1.5rem;
+  }
+}

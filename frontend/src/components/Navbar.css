@@ -1,0 +1,141 @@
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  background-color: #4158D0;
+  background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+  color: #fff;
+  font-family: Arial, sans-serif;
+  position: fixed; /* Make the navbar fixed */
+  top: 0; /* Align it to the top */
+  left: 0; /* Align it to the left */
+  width: 100%; /* Full width */
+  z-index: 1000; /* Ensure it is above other elements */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional: add a shadow */
+}
+
+.navbar-logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #fff;
+  cursor: pointer;
+}
+
+.mobile-menu-icon {
+  display: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: #fff;
+}
+
+.navbar-links {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+  margin: 0;
+}
+
+.navbar-links li {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.link {
+  text-decoration: none;
+  color: #fff;
+}
+
+.link:hover {
+  color: #000;
+}
+
+.navbar-button {
+  padding: 0.5rem 1.5rem;
+  background-color: #00DBDE;
+  background-image: linear-gradient(90deg, #00DBDE 0%, #FC00FF 100%);
+  color: #fff;
+  border: none;
+  border-radius: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.navbar-button:hover {
+  background-color: #85FFBD;
+  background-image: linear-gradient(45deg, #85FFBD 0%, #FFFB7D 100%);
+  color: #000;
+}
+
+.user-menu .icon {
+  font-size: 1.5rem;
+  margin-right: 0.5rem;
+  cursor: pointer;
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  right: 1rem;
+  background-color: #4158D0;
+  background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+  border-radius: 8px;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  color: #fff;
+}
+
+.dropdown-menu p {
+  margin: 0;
+  cursor: pointer;
+}
+
+.dropdown-menu p:hover {
+  color: #FFD700;
+}
+
+@media (max-width: 768px) {
+  .navbar {
+      padding: 1rem;
+  }
+  
+  .navbar-links {
+      display: none;
+      flex-direction: column;
+      position: absolute;
+      top: 70px; /* Adjust top value according to your navbar height */
+      left: 0;
+      width: 100%;
+      background-color: #4158D0;
+      background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+  }
+
+  .navbar-links.mobile-open {
+      display: flex;
+      align-items: center;
+  }
+
+  .navbar-logo {
+      font-size: 1.2rem;
+  }
+
+  .mobile-menu-icon {
+      display: block;
+  }
+
+  .navbar-button {
+      width: 100%;
+      text-align: center;
+      margin-top: 0.5rem;
+  }
+}
+
+/* Add padding to body to prevent content from hiding behind the navbar */
+body {
+  padding-top: 70px; /* Adjust this value based on the height of your navbar */
+}

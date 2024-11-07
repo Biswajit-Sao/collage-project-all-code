@@ -1,0 +1,123 @@
+/* Appointments.css */
+.appointments-container {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 1.5rem;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  .appointments-container h2 {
+    color: #00796b;
+    margin-bottom: 1.5rem;
+  }
+  
+  .appointments-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  
+  .appointment-card {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 1rem;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+  }
+  
+  .appointment-card:hover {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  }
+  
+  .doctor-info {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    flex: 1;
+  }
+  
+  .doctor-info img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .doctor-details h3 {
+    color: #00796b;
+    margin: 0;
+    font-size: 1.2rem;
+  }
+  
+  .doctor-details p {
+    color: #333;
+    margin: 0.2rem 0;
+  }
+  
+  .appointment-details {
+    text-align: left;
+    margin-left: 2rem;
+    flex: 1;
+  }
+  
+  .appointment-details p {
+    margin: 0.5rem 0;
+  }
+  
+  .appointment-buttons {
+    margin-top: 1rem;
+  }
+  
+  .appointment-buttons button {
+    padding: 0.5rem 1.2rem;
+    font-size: 0.9rem;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .appointment-buttons button:first-child {
+    background-color: #00796b;
+    margin-right: 0.5rem;
+  }
+  .cancel-apporetment{
+    background-color: #b71c1c;
+    color: black
+  }
+ 
+  .appointment-buttons button:first-child:hover {
+    background-color: #004d40;
+  }
+  
+  .appointment-buttons .cancel-btn {
+    background-color: #d32f2f;
+  }
+  
+  .appointment-buttons .cancel-btn:hover {
+    background-color: #b71c1c;
+  }
+  
+  @media (max-width: 600px) {
+    .appointment-card {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .appointment-details {
+      margin-left: 0;
+    }
+  }
+  
+  .compliterd-color{
+    background-color: rgb(8, 238, 8);
+    color:black;
+  }
